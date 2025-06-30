@@ -54,7 +54,7 @@ Unlike everyone else in this thread I believe you are talking about why the midd
 
 Obligatory thanks for the gold edit!  Apparently I was the first person who understood what the OP was asking.
 
-Edit for clarification because this seems so controversial.  What OP is talking about is the additional cushioning in the middle seat like found [here](_URL_0_) which he confirms in the reply to this post.  At no point in the post does the OP mention anything about the floor.  yes there is a bump there but that's there for obvious reasons of clearance for undercarriage materials such as strengthening members, exhaust, and driveshaft/transmission.  I worked for Mazda for almost 4 years and met with Jim Sullivan who is the head of Mazda North America and this is his explanation of the seat's shape.
+Edit for clarification because this seems so controversial.  What OP is talking about is the additional cushioning in the middle seat like found [here] which he confirms in the reply to this post.  At no point in the post does the OP mention anything about the floor.  yes there is a bump there but that's there for obvious reasons of clearance for undercarriage materials such as strengthening members, exhaust, and driveshaft/transmission.  I worked for Mazda for almost 4 years and met with Jim Sullivan who is the head of Mazda North America and this is his explanation of the seat's shape.
 
 Hope this clears things up!
 
