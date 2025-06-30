@@ -1,6 +1,6 @@
 # AGT-2025: AI-Generated Text 2025
 
-**AGT-2025** is a custom-constructed test dataset introduced in the thesis *"Detecting Machine-Generated Text Across Granularity, Domains, and LLMs"* (2025). It is designed to evaluate how well existing detection models generalize to machine-generated text from **state-of-the-art LLMs** released in 2025, namely **GPT-4.5** and **DeepSeek R1**.
+**AGT-2025** is a custom-constructed test dataset introduced in the thesis *"Detecting Machine-Generated Text Across Granularity, Domains, and LLMs"* (2025). It is designed to evaluate the generalization ability of detection models to outputs from cutting-edge LLMs released in 2025.
 
 ---
 
@@ -8,13 +8,13 @@
 
 AGT-2025 includes **both English and Chinese** samples. Each language subset contains:
 
-- **Human-written texts** sourced from *HC3* and *M4GT* datasets, with no overlap with training data.
+- **Human-written texts** sourced from *HC3* and *M4GT*, with no overlap with training data.
 - **AI-generated texts** produced by:
   - **GPT-4.5** (via question-based generation)
   - **DeepSeek R1** (via summary-based rewriting)
 
 Each sample includes a binary label:
-- `0` = human-written  
+- `0` = human-written
 - `1` = machine-generated
 
 ---
@@ -25,22 +25,22 @@ AGT-2025 was built using two distinct generation pipelines:
 
 ### 1. Question-Based Generation (HC3-style)
 
-- Prompt: Human-written question from HC3
-- Generator: GPT-4.5 or DeepSeek R1
-- Output: LLM-generated QA-style response
+- Prompt: Human-written question from HC3  
+- Generator: GPT-4.5 or DeepSeek R1  
+- Output: QA-style response  
 
 ### 2. Summary-Based Rewriting (M4GT-style)
 
-- Source: Long human-written document from M4GT
-- Step 1: Summarized into a short 10–20 word prompt
-- Step 2: Prompt input to GPT-4.5 or DeepSeek R1
-- Output: A rewritten version, stylistically diverse yet domain-aligned
+- Input: Long human-written text from M4GT  
+- Step 1: Summarized to 10–20 word prompt  
+- Step 2: Prompt sent to GPT-4.5 or DeepSeek R1  
+- Output: Rewritten version  
 
-Prompting and generation were performed in clean sessions with no prior memory or history, ensuring high diversity and independence.
+To ensure diversity, each prompt was generated in a clean session with no memory or prior history.
 
 ---
 
-## 📊 Statistics
+## 📊 Basic Statistics
 
 | Language | Label  | Count | Mean Words | Std Dev | Max Words |
 |----------|--------|-------|------------|---------|------------|
@@ -49,15 +49,13 @@ Prompting and generation were performed in clean sessions with no prior memory o
 | Chinese  | Human  | 1000  | 189        | 398     | 6104       |
 | Chinese  | AI     | 1080  | 149        | 90      | 998        |
 
-Tokenization used:
-- English: whitespace
+Tokenization:
+- English: Whitespace  
 - Chinese: Jieba tokenizer
 
 ---
 
-## 📁 Example Format
-
-Each entry in the dataset follows this structure (in `.jsonl`):
+## 📁 Example Format (`.jsonl`)
 
 ```json
 {
@@ -67,4 +65,3 @@ Each entry in the dataset follows this structure (in `.jsonl`):
   "source": "deepseek-r1",
   "language": "zh"
 }
-
